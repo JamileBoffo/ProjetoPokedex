@@ -10,32 +10,33 @@
 <body>
     <nav>
         <ul>
-            <a href="/"> <li> </li></a>
+            <img class="icon-pokebola" src="https://cdn-icons-png.flaticon.com/512/188/188918.png" height="48px" alt="logo-pokebola">
         </ul>
+        <li>
+            <h1>Pokédex</h1>
+        </li>
     </nav>
     <main>
         <% pokedex.forEach(element => { %>
             <a href="/detalhes/<%= element.id %> ">
                 <div class="card-container"> 
-                        <div class="header-card">
-                            <span class="card-id">  <%= element.id %></span>
+                    <div class="header-card">
+                        <span class="card-id">  <%= element.id %></span> 
+                        <span class="card-number"> <%= element.num %></span>
+                    </div>
+
+                    <div class="main-card">
+                        <img src="<%= element.img %> " alt="<%= element.name %> ">
                             
-                            <span class="card-number"> <%= element.num %></span>
+                        <div class="card-name"> <%= element.name %></div>
+
+                        <div class="data-card">
+                            <span class="width"> <%= element.width %></span>
+                            <span class="heigth"> <%= element.height %> </span>
                         </div>
+                    </div>
 
-                        <div class="main-card">
-                            <img src="<%= element.img %> " alt="<%= element.name %> ">
-                            
-                            <div class="card-name"> <%= element.name %></div>
-
-                            <div class="data-card">
-                                <span class="width"> <%= element.width %></span>
-                                <span class="heigth"> <%= element.height %> </span>
-                            </div>
-                            peso e a altura
-                        </div>
-
-                        <div class="footer-card"> <%= element.type %> </div>
+                    <div class="footer-card"> <%= element.type %> </div>
                 </div>
             </a>
         <% }) %>
