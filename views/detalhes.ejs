@@ -8,6 +8,12 @@
     <title>Pokedex</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <img class="icon-pokebola" src="https://cdn-icons-png.flaticon.com/512/188/188918.png" height="48px" alt="logo-pokebola">
+            <a href="/"> <li> Home </li></a>
+        </ul>
+    </nav>
     <main>
         <% pokemonAtual.forEach(element => { %>
                 <div class="card-container"> 
@@ -20,16 +26,19 @@
                         <div class="main-card">
                             <img src="<%= element.img %> " alt="<%= element.name %> ">
                             
-                            <div class="card-name"> <%= element.name %></div>
+                            <div class="card-name"> Name: <%= element.name %></div>
 
                             <div class="data-card">
-                                <span class="width"> <%= element.width %></span>
-                                <span class="heigth"> <%= element.height %> </span>
+                                <span class="weight"> Weight: <%= element.weight %></span>
+                                <br>
+                                <span class="heigth"> Height: <%= element.height %> </span>
+                                <br>
+                                <span class="weaknesses"> Weaknesses: <%= element.weaknesses %> </span>
+                            
                             </div>
-                            peso e a altura
                         </div>
 
-                        <div class="footer-card"> <%= element.type %> </div>
+                        <div class="footer-card"> Type: <%= element.type %> </div>
                 </div>
         <% }) %>
     </main>
