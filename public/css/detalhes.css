@@ -1,38 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/detalhes.css" type="text/css">
-    <title>Pokedex</title>
-</head>
-<body>
-    <main>
-        <% pokemonAtual.forEach(element => { %>
-                <div class="card-container"> 
-                        <div class="header-card">
-                            <span class="card-id">  <%= element.id %></span>
-                            
-                            <span class="card-number"> <%= element.num %></span>
-                        </div>
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-                        <div class="main-card">
-                            <img src="<%= element.img %> " alt="<%= element.name %> ">
-                            
-                            <div class="card-name"> <%= element.name %></div>
+div.card-container {
+    padding: 5px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    box-shadow: 5px 10px 1px 1px #9f8b38;
+    border: solid 1px red;
+    border-radius: 10px;
+}
 
-                            <div class="data-card">
-                                <span class="width"> <%= element.width %></span>
-                                <span class="heigth"> <%= element.height %> </span>
-                            </div>
-                            peso e a altura
-                        </div>
+div.card-container:hover {
+    background-color: aqua;
+    transform: scale(1.2);
+}
 
-                        <div class="footer-card"> <%= element.type %> </div>
-                </div>
-        <% }) %>
-    </main>
+a {
+    text-decoration: none;
+}
+div.header-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
     
-</body>
-</html>
+}
+
