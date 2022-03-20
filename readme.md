@@ -11,6 +11,6 @@ Este projeto foi realizado com base em EJS, JS e CSS com a temática de Pókemon
 
 
 ## Personal
-Jamile Boffo
-Linkedin: https://www.linkedin.com/in/jamile-boffo-242527210/
+Jamile Boffo <br>
+Linkedin: https://www.linkedin.com/in/jamile-boffo-242527210/ <br>
 mailto: jamileboffo@gmail.com
