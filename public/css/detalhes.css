@@ -4,35 +4,43 @@
     border: 0;
     margin: 0;
     padding: 0;
+    font-family: 'Pokemon Solid', sans-serif;
 }
 
 nav {
-    background-color: indianred;
+    background-color: rgb(163, 27, 27);
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 50px;
 }
 
-nav ul img {
-
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 6px black;
 }
-ul {
+header{
+    background-color: rgb(163, 27, 27);
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    justify-content: center;
+    padding-top: 0;
 }
-
-
+header h1 {
+    color: white;
+    text-shadow: 3px 3px 6px black;
+}
 main{
     display: flex;
+    background-image: url("https://cutewallpaper.org/21/pokedex-wallpaper/Pokemon-pokedex-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    padding: 26px;
 }
 
 div.card-container {
-    font-family: 'Pokemon Solid', sans-serif;
     padding: 5px;
     background-color: seashell;
     color: black;
@@ -54,4 +62,3 @@ div.header-card {
     width: 100%;
     justify-content: space-between;
 }
-
